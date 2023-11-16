@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MainTitle = styled.h1`
+export const MainTitle = styled.h2`
 font-family: 'Hammersmith One', sans-serif;
   font-size: 30px;
   font-weight: 600;
@@ -8,4 +8,4 @@ font-family: 'Hammersmith One', sans-serif;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-`
+`;

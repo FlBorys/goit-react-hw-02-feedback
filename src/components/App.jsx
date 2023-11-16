@@ -31,13 +31,17 @@ export class App extends Component {
 
   render() {
     return (
-      <Section title="Please leave feedback">
+      <div>
+              <Section title="Please leave feedback">
 <FeedbackOptions options={Object.keys(this.state)}
           leaveFeedback={this.onLeaveFeedback} />
+          </Section>
+        <Section title="Statistics">
         {this.countTotal() !== 0 ?
           <Statistic good={this.state.good} neutral={this.state.neutral} bad={this.state.bad} total={this.countTotal()} positivePercentage={this.countPercentage()} /> :
           <Notifiction title="There is no feedback" />}
       </Section>
+      </div>
       );
   }
 }
